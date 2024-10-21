@@ -1,0 +1,14 @@
+.paragrafo-subtitulo {
+    text-align: center;
+    background-color: #252525;
+    height: 50px;
+    color: #ccc;
+}
+
+.paragrafo-subtitulo p {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    color: #ccc;
+
+}
