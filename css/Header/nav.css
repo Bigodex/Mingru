@@ -14,8 +14,9 @@
 /* Estilo da navegação */
 .nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   margin-top: 60px;
+  width: 100%;
   /* Ajuste a altura para centralizar corretamente */
 }
 
