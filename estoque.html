@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fique a Vontade.</title>
+    <link rel="icon" href="assets/img/Logo.png" />
+    <link rel="stylesheet" href="css/Componentes/banner.css" />
+    <link rel="stylesheet" href="css/Componentes/button.css" />
+    <link rel="stylesheet" href="css/Componentes/modal.css">
+    <link rel="stylesheet" href="css/Geral/style.css" />
+    <link rel="stylesheet" href="css/Header/input.css" />
+    <link rel="stylesheet" href="css/Header/nav.css" />
+    <link rel="stylesheet" href="css/Header/subtitulo.css" />
+    <link rel="stylesheet" href="css/Paginas/Estoque/estoque.css" />
+  </head>
+  <body>
+    <header>
+          <div class="nav">
+            <ul>
+              <li>
+                <a href="index.html"
+                  ><img
+                    src="assets/icons/home.svg"
+                    alt="Início"
+                    width="16"
+                    height="16"
+                    class="icon"
+                  />Inicio</a
+                >
+              </li>
+              <li>
+                <a href="summer.html">
+                  <img
+                    src="assets/icons/sun.svg"
+                    alt="Verão"
+                    width="16"
+                    height="16"
+                    class="icon"
+                  />
+                  Verão
+                </a>
+              </li>
+              <li>
+                <a href="novidades.html">
+                  <img
+                    src="assets/icons/star.svg"
+                    alt="Novidades"
+                    width="16"
+                    height="16"
+                    class="icon"
+                  />
+                  Novidades
+                </a>
+              </li>
+              <li>
+                <a href="infantil.html">
+                  <img
+                    src="assets/icons/child.svg"
+                    alt="Infantil"
+                    width="16"
+                    height="16"
+                    class="icon"
+                  />
+                  Infantil
+                </a>
+              </li>
+              <li>
+                <a href="feminino.html">
+                  <img
+                    src="assets/icons/female.svg"
+                    alt="Feminino"
+                    width="16"
+                    height="16"
+                    class="icon"
+                  />
+                  Feminino
+                </a>
+              </li>
+              <li>
+                <a href="masculino.html">
+                  <img
+                    src="assets/icons/male.svg"
+                    alt="Masculino"
+                    width="16"
+                    height="16"
+                    class="icon"
+                  />
+                  Masculino
+                </a>
+              </li>
+              <li>
+                <a href="esportivo.html">
+                  <img
+                    src="assets/icons/rugby.svg"
+                    alt="Esportivo"
+                    width="16"
+                    height="16"
+                    class="icon"
+                  />
+                  Esportivo
+                </a>
+              </li>
+    
+              <div class="search-container">
+                <input type="text" placeholder="Procure seu look aqui ;D" />
+                <img
+                  src="assets/icons/procurar.svg"
+                  alt="Lupa"
+                  class="search-icon"
+                />
+              </div>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/icons/user.svg"
+                    alt="Entrar"
+                    width="16"
+                    height="16"
+                    class="icon"
+                  />Entrar</a
+                >
+              </li>
+            </ul>
+          </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Confira nossas ofertas!</h1>
+        <div class="grid-items">
+          <div class="produto-black">
+            <a href="javascript:void(0);" data-modal="modal-1">
+            <img src="assets/img/spider.jpeg" alt="Produto 1" />
+          </a>
+            <h3>Camiseta Spider-Man</h3>
+            <p>R$ 49,90</p>
+            <a href="#" class="btn-comprar">Comprar</a>
+          </div>
+          
+          <div class="produto-black">
+            <a href="javascript:void(0);" data-modal="modal-1">
+              <img src="assets/img/patrick.jpeg" height="100" alt="Produto 2" />
+            </a>
+            <h3>Camiseta Patrick</h3>
+            <p>R$ 59,90</p>
+            <a href="#" class="btn-comprar">Comprar</a>
+          </div>
+
+          <div id="modal-1" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+
+            <!-- Zoom controls -->
+          <div class="zoom-controls">
+            <button id="zoomIn">+</button>
+            <button id="zoomOut">-</button>
+          </div>
+        
+          
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+    <script src="js/estoque.js"></script>
+    <script src="js/zoom.js"></script>
+  </body>
+</html>

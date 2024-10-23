@@ -30,7 +30,7 @@
     color: #ccc;
     padding: 15px 30px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 30px;
   }
 
   .btn-comprar:hover {
@@ -41,4 +41,24 @@
   .btn-comprar:active {
     transform: scale(0.95);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-comprar-yellow {
+  display: inline-block;
+  background-color: #e6b800;
+  color: #252525;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+.btn-comprar-yellow:hover {
+  background-color: #b69203;
+  color: #252525;
+}
+
+.btn-comprar-yellow:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }

@@ -5,19 +5,24 @@
 }
 
 body {
-    background-color: rgb(255, 200, 0);
+    background-color: #fab919;
     color: #252525;
     font-family: 'Roboto', sans-serif;
 }
 
 header {
-    background-color: rgb(255, 200, 0);
+    background-color: #fab919;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: -50px;
+}
+
+main {
+  text-align: center;
+  padding: 40px 0;
 }
 
 /* Rodapé */
@@ -45,4 +50,11 @@ footer {
   
   footer ul li a:hover {
     text-decoration: underline;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color:#fab919;
   }
