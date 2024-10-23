@@ -39,14 +39,40 @@
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 250px;
-  }
-  
-  .produto img {
+    position: relative; /* Para que o conteúdo interno seja posicionado relativamente */
+    display: inline-block;
+}
+
+.produto img {
     width: 100%;
     height: auto;
     border-radius: 3px;
-  }
-  
+    transition: 0.3s ease; /* Animação suave */
+}
+
+.produto::after {
+    content: "Clique para ampliar <+>"; /* Texto a ser exibido */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    color: #252525;
+    font-weight: bold;
+    font-size: 14px;
+    opacity: 0; /* Invisível inicialmente */
+    transition: opacity 0.3s ease; /* Animação suave */
+    pointer-events: none; /* Não interfere na interação do mouse */
+    background-color: #ccc;
+    border-radius: 30px;
+    padding: 5px;
+
+}
+
+.produto:hover::after {
+    opacity: 1; /* Tornar o texto visível ao passar o mouse */
+}
+
+
   .produto h3 {
     margin: 15px 0;
     font-size: 18px;

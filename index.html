@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/Header/subtitulo.css" />
   </head>
   <body>
-    <!-- Cabeçalho -->
+    <!-- Navegador -->
     <header>
       <div class="logo">
         <img
@@ -141,6 +141,7 @@
       </div>
     </header>
 
+    <!-- Subtitulo -->
     <div class="paragrafo-subtitulo">
       <p>
         <strong>FRETE GRÁTIS </strong>para compras de
@@ -160,23 +161,36 @@
       <h2>Destaques da Semana</h2>
       <div class="galeria">
         <div class="produto">
+          <a href="javascript:void(0);" data-modal="modal-1">
           <img src="assets/img/spider.jpeg" alt="Produto 1" />
+        </a>
           <h3>Camiseta Spider-Man</h3>
           <p>R$ 49,90</p>
           <a href="#" class="btn-comprar">Comprar</a>
         </div>
+        
         <div class="produto">
-          <img src="assets/img/patrick.jpeg" height="100" alt="Produto 2" />
+          <a href="javascript:void(0);" data-modal="modal-1">
+            <img src="assets/img/patrick.jpeg" height="100" alt="Produto 2" />
+          </a>
           <h3>Camiseta Patrick</h3>
           <p>R$ 59,90</p>
           <a href="#" class="btn-comprar">Comprar</a>
         </div>
+
         <div class="produto">
-          <img src="assets/img/branca.jpeg" alt="Produto 3" />
-          <h3>Camiseta Porco-Aranha</h3>
-          <p>R$ 49,90</p>
+          <a href="javascript:void(0);" data-modal="modal-1">
+            <img src="assets/img/branca.jpeg" height="100" alt="Produto 2" />
+          </a>
+          <h3>Camiseta Patrick</h3>
+          <p>R$ 59,90</p>
           <a href="#" class="btn-comprar">Comprar</a>
         </div>
+
+        <div id="modal-1" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
       </div>
     </section>
 
@@ -184,5 +198,6 @@
     <footer>
       <p>&copy; 2024 Mingru - Todos os direitos reservados.</p>
     </footer>
+    <script src="js/estoque.js"></script>
   </body>
 </html>
