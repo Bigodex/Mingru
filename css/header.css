@@ -1,0 +1,156 @@
+/* ESTILIZAÇÃO DO HEADER */
+
+header {
+    background-color: #E8AF27;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 3em;
+    border-bottom: 2px solid #2E2A22;
+}
+
+/* ESTILIZAÇÃO DA LOGO DO HEADER */
+header .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .titulo img {
+    width: 10em;
+    height: auto;
+    margin-right: 10px;
+}
+
+header .titulo .menu img {
+    width: 4em;
+    background-color: #2E2A22;
+    border-radius: 50%;
+}
+
+
+/* ESTILIZAÇÃO DO INPUT DO HEADER */
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Added for positioning the button inside the input */
+}
+
+.input input {
+    width: 30em; /* Increased width */
+    padding: 0.8em 3em 0.8em 1em; /* Added padding-right for button space */
+    border-radius: 30px;
+    margin-right: 10px;
+    background-color: #2E2A22;
+    border: none;
+    color: #ebc773;
+}
+
+.input input [type="text"] {
+    color: #ebc773;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    padding: 0.6em 3em 0.6em 1em; /* Added padding-right for button space */
+    border-radius: 30px;
+    margin-right: 10px;
+    background-color: #2E2A22;
+    border: none;
+}
+
+.input input::placeholder {
+    color: #ebc773;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.input input:focus {
+    outline: none;
+    border: 2px solid #E8AF27;
+    background-color: #2E2A22;
+    color: #ebc773;
+}
+
+.input button {
+    position: absolute; /* Positioned inside the input */
+    right: 10px; /* Adjusted to align with the input's padding */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+    padding: 0.4em 0.8em; /* Adjusted padding for better fit */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: transparent;
+}
+
+.input button img {
+    width: 1em;
+    height: 1em;
+}
+
+
+/* ESTILIZAÇÃO DO NAV DO HEADER */
+.navbar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-header ul li {
+    position: relative; /* Added for positioning the hover effect */
+    margin: 0 1em;
+}
+
+.navbar-header ul li a {
+    text-decoration: none;
+    color: #2E2A22;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    position: relative; /* Added for the hover effect */
+    overflow: hidden; /* Ensures the animation stays within bounds */
+    display: flex; /* Ensures text and icon are inline */
+    align-items: center; /* Centers icon and text vertically */
+}
+
+.navbar-header ul li a span {
+    position: relative; /* Added for the hover effect */
+    overflow: hidden; /* Ensures the animation stays within bounds */
+}
+
+.navbar-header ul li a span::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Thickness of the bar */
+    background-color: currentColor; /* Matches the text color */
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+.navbar-header ul li a:hover span::after {
+    width: 100%; /* Expands the bar fully */
+}
+
+.navbar-header img {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+}

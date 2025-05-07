@@ -1,0 +1,103 @@
+.sub-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #E8AF27;
+    padding: 1em 0;
+    border-bottom: 1px solid #333;
+    z-index: 2;
+}
+
+.sub-header img {
+    width: 0.8em;
+    height: auto;
+    margin-left: 0.5em;
+    transition: transform 0.3s ease;
+}
+
+.sub-header nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.sub-header nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-header nav ul li {
+    margin: 0 1em;
+    position: relative;
+}
+
+.sub-header nav ul li a {
+    text-decoration: none;
+    color: #2E2A22;
+    font-size: 1.1em;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0.5em 1em;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.sub-header nav ul li:hover > a {
+    background-color: #dca42c;
+}
+
+.sub-header nav ul li .dropdown {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: calc(100% + 1em); /* distancia do menu principal */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #E8AF27;
+    padding: 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: max-height 0.3s ease;
+    min-width: 200px;
+
+}
+
+.sub-header nav ul li:hover > .dropdown {
+    max-height: 500px; /* valor grande suficiente para exibir tudo */
+    padding: 0.5em 0;
+}
+
+.sub-header nav ul.dropdown li {
+    margin: 0.4em auto;
+}
+
+.sub-header nav ul.dropdown li a {
+    display: block;
+    padding: 0.5em 1em;
+    color: #2E2A22;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sub-header nav ul.dropdown li a:hover {
+    background-color: #2E2A22;
+    color: #E8AF27;
+}
+
+/* Gira a seta ao passar o mouse */
+.has-dropdown:hover > a > img {
+    transform: rotate(180deg);
+}

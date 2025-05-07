@@ -1,0 +1,165 @@
+/* Container principal dos cards */
+.container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 37em;
+  padding: 40px 0;
+  margin-top: 2em;
+  background-color: #E8AF27;
+}
+
+/* Estilo geral dos cards */
+.card {
+  background: linear-gradient(45deg, #2E2A22, #2E2A22);
+  border-radius: 16px;
+  padding: 24px 20px;
+  width: 280px;
+  height: 480px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s;
+  margin-top: 10em;
+}
+
+/* Efeito ao passar o mouse sobre o card */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Imagem do card */
+.card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Título do card */
+.card h3 {
+  font-size: 1.3rem;
+  margin-top: 1em;
+  color: #2E2A22; 
+
+}
+
+/* Descrição do card */
+.card p {
+  font-size: 1rem;
+  color: #2E2A22;
+  margin-top: -4em;
+  font-weight: 500;
+}
+
+/* Botão de compra */
+.card button {
+  background-color: #E8AF27;
+  color: #2E2A22;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 80%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card button:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Alturas diferentes dos cards (pódio) */
+.podium-1 {
+  height: 450px;
+  animation-delay: 0s;
+  margin-top: 6em;
+}
+
+.podium-1 h3 {
+margin-top: 1em;
+margin-bottom: 16px;
+font-size: 22px;
+color: #E8AF27;
+}
+
+.podium-1 p {
+  margin-top: 0em;
+  font-size: 16px;
+  align-items: justify;
+  color: #ecbd50;
+}
+
+.podium-2 {
+  height: 400px;
+  animation-delay: 0.2s;
+  margin-top: 9em;
+}
+
+.podium-2 h3 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-size: 22px;
+  color: #E8AF27;
+}
+
+.podium-2 p {
+  margin-top: 0em;
+  font-size: 16px;
+  align-items: justify;
+  color: #ecbd50;
+}
+
+.podium-3 {
+  height: 370px;
+  animation-delay: 0.4s;
+  margin-top: 11em;
+}
+
+.podium-3 h3 {
+  margin-top: 0em;
+  margin-bottom: 16px;
+  font-size: 22px;
+  color: #E8AF27;
+}
+
+.podium-3 p {
+  margin-top: 0em;
+  font-size: 16px;
+  align-items: justify;
+  color: #ecbd50;
+}
+
+
+/* Animação de flutuação */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.titulo-sessao-podium {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2E2A22;
+  text-align: center;
+  margin-top: -1em;
+  width: 100%;
+  margin-bottom: -4em;
+  z-index: 10;
+}
+
+.titulo-sessao-podium h1 {
+  margin-bottom: 0em
+}
