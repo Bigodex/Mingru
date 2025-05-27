@@ -11,6 +11,7 @@ header {
     text-align: center;
     height: 3em;
     border-bottom: 2px solid #2E2A22;
+    z-index: 1000;
 }
 
 /* ESTILIZAÇÃO DA LOGO DO HEADER */
@@ -154,3 +155,95 @@ header .titulo .menu img {
     height: 1.2em;
     margin-right: 0.5em;
 }
+
+/* ... (SEU CÓDIGO EXISTENTE ACIMA PERMANECE IGUAL) ... */
+
+/* RESPONSIVIDADE GERAL */
+@media (max-width: 1024px) {
+    .input input {
+      width: 20em;
+    }
+  
+    .navbar-header ul li a {
+      font-size: 1em;
+    }
+  
+    header .titulo img {
+      width: 8em;
+    }
+  
+    header .titulo .menu img {
+      width: 3em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      height: auto;
+      padding: 1em 0.5em;
+    }
+  
+    header .titulo {
+      margin-bottom: 0.5em;
+    }
+  
+    .input {
+      width: 100%;
+      margin: 0.5em 0;
+      justify-content: center;
+    }
+  
+    .input input {
+      width: 80%;
+      padding: 0.6em 2.5em 0.6em 1em;
+    }
+  
+    .navbar-header {
+      margin-top: 0.5em;
+    }
+  
+    .navbar-header ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .navbar-header ul li {
+      margin: 0.5em 1em;
+    }
+  
+    .navbar-header ul li a {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header .titulo img {
+      width: 6em;
+    }
+  
+    header .titulo .menu img {
+      width: 2.5em;
+    }
+  
+    .input input {
+      width: 80%;
+      font-size: 0.9em;
+      margin-left: 1em;
+    }
+  
+    .input button img {
+      width: 0.9em;
+      height: 0.9em;
+    }
+  
+    .navbar-header ul li a {
+      font-size: 0.95em;
+    }
+  
+    .navbar-header img {
+      width: 1em;
+      height: 1em;
+    }
+  }
+  

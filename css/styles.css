@@ -20,3 +20,33 @@ body {
     width: 1em;
 }
 
+/* Responsividade */
+@media (max-width: 1024px) {
+  .titulo-sessao {
+    font-size: 1.75rem;
+    margin-bottom: -1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo-sessao {
+    font-size: 1.5rem;
+    margin-bottom: -1.2em;
+  }
+
+  .titulo-sessao img {
+    width: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-sessao {
+    font-size: 1.25rem;
+    padding: 0em;
+    margin-bottom: -1em;
+  }
+
+  .titulo-sessao img {
+    width: 0.8em;
+  }
+}

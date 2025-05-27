@@ -101,3 +101,78 @@
 .has-dropdown:hover > a > img {
     transform: rotate(180deg);
 }
+
+@media (max-width: 1024px) {
+    .sub-header nav ul li {
+      margin: 0 0.5em;
+    }
+  
+    .sub-header nav ul li a {
+      font-size: 1em;
+      padding: 0.4em 0.8em;
+    }
+  
+    .sub-header nav ul.dropdown li a {
+      font-size: 0.95em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sub-header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1em;
+    }
+  
+    .sub-header nav {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .sub-header nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+  
+    .sub-header nav ul li {
+      width: 100%;
+      margin: 0.2em 0;
+    }
+  
+    .sub-header nav ul li a {
+      width: 100%;
+      font-size: 1em;
+      padding: 0.6em 1em;
+    }
+  
+    .sub-header nav ul li .dropdown {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      border-radius: 0 0 5px 5px;
+      box-shadow: none;
+      width: 100%;
+    }
+  
+    .sub-header nav ul li:hover > .dropdown {
+      max-height: 400px;
+    }
+  
+    .sub-header nav ul.dropdown li a {
+      padding-left: 2em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sub-header nav ul li a {
+      font-size: 0.95em;
+      padding: 0.5em 1em;
+    }
+  
+    .sub-header img {
+      width: 0.7em;
+    }
+  }
+  
